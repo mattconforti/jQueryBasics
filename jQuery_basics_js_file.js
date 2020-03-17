@@ -1,3 +1,2 @@
-var counter = 0;
 var headings = jQuery(':header');
-console.log(headings);
+console.log("Number of elements matched:", headings.length);
