@@ -1,3 +1,3 @@
 var counter = 0;
-var headings = jQuery('.heading');
+var headings = jQuery(':header');
 console.log(headings);
