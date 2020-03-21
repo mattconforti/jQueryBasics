@@ -1,4 +1,11 @@
 var $listItems = jQuery('li');
 // or use $('li') - shorthand for jQuery('li')
 
-console.log($listItems.text()); // returns text without spaces
+// update 2nd li's text
+$('li:nth-child(2)').text("updated item2");
+
+// create new element and store in jQuery object
+var $newListItem = $('<li>new item (created by jQuery)</li>');
+
+//insert $newListItem after the current last item
+$listItems.last().after($newListItem); 
