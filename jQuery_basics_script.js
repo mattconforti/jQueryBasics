@@ -1,3 +1,4 @@
+// get matched set of li elements
 var $listItems = jQuery('li');
 // or use $('li') - shorthand for jQuery('li')
 
