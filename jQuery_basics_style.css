@@ -14,8 +14,8 @@ ul {
 }
 
 ul li {
+    background-color: #5fc5af;
     border: 2px solid black;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: #5fc5af;
     padding-left: 5px;
 }
