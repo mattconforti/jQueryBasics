@@ -1,0 +1,9 @@
+h1 {
+    font-size: 2.75em;
+    text-decoration: underline;
+}
+
+#add_button, #clear_button {
+    margin-top: 25px;
+    font-size: 1.25em;
+}
