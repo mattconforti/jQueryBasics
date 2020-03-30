@@ -5,5 +5,3 @@ var $textInputs = $('input[type="text"]');
 // output to console for debugging
 console.log($checkboxInputs);
 console.log($textInputs);
-
-
