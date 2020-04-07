@@ -1,4 +1,4 @@
-$('#add_button').on('click', function() {  // multi-line string using backticks
+$('#add_button').on('click', function() {
 
     // store list items in jQuery variable
     var $listItems = $('.list_item');
@@ -6,7 +6,7 @@ $('#add_button').on('click', function() {  // multi-line string using backticks
     // create counter for how many list items we have
     var counter = $listItems.length;
 
-    // add to the counter as we are creating a new item
+    // add to the counter as we are about to create a new item
     counter++;
 
     // create the new list item
@@ -23,4 +23,9 @@ $('#add_button').on('click', function() {  // multi-line string using backticks
     $textInputs.each(function() {
         console.log("Input ID# " + this.id);
     });
+});
+
+$('#clear_button').on('click', function() {
+    $('input[type="text"]').val('');  // .val() method to set value of input field
+    $('input[type="checkbox"]').prop("checked", false);  // .prop() method to uncheck boxes
 });
