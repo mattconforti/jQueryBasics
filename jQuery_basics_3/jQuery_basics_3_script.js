@@ -8,9 +8,10 @@ $paragraphs_not_one.hide();
 // on button click,
 $toggle_button.on('click', function() {
 
-    // toggle btw show/hide the other paragraphs
-    $paragraphs_not_one.toggle();
+    // toggle btw slideUp/Down
+    $paragraphs_not_one.slideToggle();
 
+    //TODO: fix button text when slid back up
     // change the button text depending on visibility
     if ($paragraphs_not_one.is(":visible")) {
         $toggle_button.text("Show Less");
