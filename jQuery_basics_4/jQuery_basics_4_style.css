@@ -1,0 +1,11 @@
+h1 {
+    text-decoration: underline;
+}
+
+.flip_card_front {
+    width: 35%;
+    background-color: rgb(255, 240, 223);
+    text-align: center;
+    padding: 30px;
+
+}
