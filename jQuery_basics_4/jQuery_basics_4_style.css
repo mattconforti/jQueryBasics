@@ -3,17 +3,26 @@ body {
 }
 
 h1 {
+  font-size: 2.5em;
   text-decoration: underline;
-  padding: 52px;
+  padding: 44px;
 }
 
 hr {
-  border-top: 1px solid darkblue;
-  margin-top: 1px;
+  border-top: 1px solid steelblue;
+  margin: 2px auto 17px;
 }
 
-#top_line {
+#line_one {
   border-top: 1px solid red;
+  margin-top: 2px;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* The flip card container */
@@ -25,7 +34,7 @@ hr {
     margin-left: 50px;
     margin-top: 50px;
   }
-  
+
   /* container to position the front and back side */
   .flip_card_inner {
     position: relative;
@@ -60,4 +69,5 @@ hr {
     background-color: #f9f9f3;
     color: black;
     transform: rotateY(180deg);
+    padding-top: 19px;
   }
