@@ -37,6 +37,10 @@ h2 {
   margin-top: 50px;
 }
 
+.flip_card:hover {
+  box-shadow: 8px 16px 32px 20px rgba(0,0,0,0.2);
+}
+
 /* container to position the front and back side */
 .flip_card_inner {
   position: relative;
@@ -45,13 +49,6 @@ h2 {
   text-align: center;
   transition: transform 1.5s;
   transform-style: preserve-3d;
-}
-  
-.flip_card:hover {
-  /* 
-  transform: rotateY(180deg);
-  */
-  box-shadow: 8px 16px 32px 20px rgba(0,0,0,0.2);
 }
   
 /* position the front and back */
@@ -80,5 +77,5 @@ h2 {
 #flip_button {
   font-size: 1em;
   margin-left: 200px;
-  margin-top: 30px;
+  margin-top: 40px;
 }
