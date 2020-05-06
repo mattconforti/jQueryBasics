@@ -5,9 +5,6 @@ $(function() {
     var $flip_card_inner = $('.flip_card_inner');
 
     $flip_button.on('click', function() {
-        // output value of isFlipped for debugging
-        console.log(isFlipped);
-
         // rid of box shadow in prep for flip
         $flip_card.css('box-shadow', 'none');
 
@@ -26,5 +23,11 @@ $(function() {
         setTimeout(function(){
             $flip_card.css('box-shadow', '4px 4px 8px 10px rgba(0,0,0,0.2)');
         }, 1500);
+
+        $flip_card.hover(function() { // handlers for mouseenter and mouseleave
+            $(this).css('box-shadow', '8px 16px 32px 20px rgba(0,0,0,0.2)');
+        }, function() {
+            $(this).css('box-shadow', '4px 4px 8px 10px rgba(0,0,0,0.2)');
+        });
     });
 });

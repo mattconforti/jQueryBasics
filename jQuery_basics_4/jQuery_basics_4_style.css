@@ -25,7 +25,6 @@ h2 {
   margin-bottom: 0;
 }
 
-/* The flip card container */
 .flip_card {
   background-color: transparent;
   box-shadow: 4px 4px 8px 10px rgba(0,0,0,0.2);
@@ -78,4 +77,9 @@ h2 {
   font-size: 1em;
   margin-left: 200px;
   margin-top: 40px;
+}
+
+#flip_button:hover {
+  background-color: #888;
+  outline: none;
 }
