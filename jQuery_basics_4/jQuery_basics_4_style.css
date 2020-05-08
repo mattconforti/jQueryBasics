@@ -8,6 +8,13 @@ h1 {
   padding: 44px;
 }
 
+h2 {
+  font-size: 2em;
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 hr {
   border-top: 1px solid steelblue;
   margin: 2px auto 17px;
@@ -18,20 +25,14 @@ hr {
   margin-top: 2px;
 }
 
-h2 {
-  font-size: 2em;
-  font-weight: normal;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
+/* card with 3-D box-shadow effect */
 .flip_card {
   background-color: transparent;
   box-shadow: 4px 4px 8px 10px rgba(0,0,0,0.2);
   transition: 0.3s;
   width: 350px;
   height: 200px;
-  perspective: 1000px; /* 3D effect */
+  perspective: 1000px; /* 3D effect for flip */
   margin-left: 50px;
   margin-top: 50px;
 }
@@ -40,7 +41,7 @@ h2 {
   box-shadow: 8px 16px 32px 20px rgba(0,0,0,0.2);
 }
 
-/* container to position the front and back side */
+/* container to hold the front and back sides */
 .flip_card_inner {
   position: relative;
   width: 100%;
@@ -50,7 +51,7 @@ h2 {
   transform-style: preserve-3d;
 }
   
-/* position the front and back */
+/* position the front and back in the container */
 .flip_card_front, .flip_card_back {
   position: absolute;
   width: 100%;
@@ -75,7 +76,7 @@ h2 {
 
 #flip_button {
   font-size: 1em;
-  margin-left: 200px;
+  margin-left: 205px;
   margin-top: 40px;
 }
 
