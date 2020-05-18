@@ -1,0 +1,14 @@
+#grid_container {
+    background-color: lightgrey;
+    display: grid;
+    /* define track size for each column */
+    grid-template-columns: 100%;
+    padding: 10px;
+}
+
+.grid_item {
+    background-color: cornflowerblue;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
