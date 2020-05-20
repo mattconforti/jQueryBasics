@@ -1,8 +1,8 @@
 #grid_container {
     background-color: lightgrey;
     display: grid;
-    /* define track size for each column */
-    grid-template-columns: 100%;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: 100px repeat(4, 150px) 100px;
     padding: 10px;
 }
 
@@ -11,4 +11,17 @@
     border: 1px solid black;
     padding: 10px;
     text-align: center;
+}
+
+#header {
+    /* start on line 1 and end on line 6 */
+    grid-column: 1 / 6;
+}
+
+#menu {
+    grid-row: 2 / 6;
+}
+
+#footer {
+    grid-column: 1 / 6;
 }
