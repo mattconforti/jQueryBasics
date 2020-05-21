@@ -1,13 +1,17 @@
 #grid_container {
+    /*
     background-color: lightgrey;
+    */
     display: grid;
     grid-template-columns: repeat(5, auto);
-    grid-template-rows: 100px repeat(4, 150px) 100px;
+    grid-template-rows: 125px repeat(4, 425px) 125px;
     padding: 10px;
 }
 
 .grid_item {
+    /*
     background-color: cornflowerblue;
+    */
     border: 1px solid black;
     padding: 10px;
     text-align: center;
@@ -24,4 +28,13 @@
 
 #footer {
     grid-column: 1 / 6;
+}
+
+h1{
+    text-decoration: underline;
+}
+
+.image {
+    width: 275px;
+    height: 275px;
 }
