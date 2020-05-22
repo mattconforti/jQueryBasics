@@ -4,7 +4,7 @@
     */
     display: grid;
     grid-template-columns: repeat(5, auto);
-    grid-template-rows: 150px repeat(4, 425px) 125px;
+    grid-template-rows: 150px repeat(4, 425px) 150px;
     padding: 10px;
 }
 
