@@ -31,6 +31,16 @@ h2 {
     margin-bottom: -6px;
 }
 
+h4 {
+    font-size: 1.5em;
+    text-align: left;
+}
+
+h5 {
+    font-size: 1.125em;
+    text-align: left;
+}
+
 .image {
     width: 275px;
     height: 275px;
@@ -44,6 +54,12 @@ h2 {
     width: 56px;
     height: 56px;
     margin-top: 21px;
+}
+
+.brand_logo {
+    float: left;
+    width: 200px;
+    height: 200px;
 }
 
 #menu {
@@ -72,6 +88,11 @@ h2 {
 #slider_area {
     padding-top: 25px;
     grid-column: 2 / 4;
+}
+
+#store_special1, #store_special2 {
+    padding-top: 15px;
+    padding-left: 20px;
 }
 
 #brand_selection_area {
