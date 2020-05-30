@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: 150px 400px 250px 250px 150px ;
+    /* gap: 10px 10px; */
     padding: 10px;
 }
 
@@ -42,7 +43,8 @@ h4 {
 }
 
 h5 {
-    font-size: 1.125em;
+    font-size: 1em;
+    line-height: 22px;
     text-align: left;
 }
 
@@ -106,9 +108,16 @@ h5 {
     grid-column: 2 / 4;
 }
 
-#store_special1, #store_special2 {
+#store_special1 {
     padding-top: 15px;
     padding-left: 20px;
+    background-image: linear-gradient(to right, grey, #444);
+}
+
+#store_special2 {
+    padding-top: 15px;
+    padding-left: 20px;
+    background-image: linear-gradient(to right, grey, #444);
 }
 
 #brand_selection_area {
