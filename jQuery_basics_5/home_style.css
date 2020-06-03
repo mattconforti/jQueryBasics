@@ -2,12 +2,14 @@
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: 150px 400px 250px 250px 150px ;
-    /* gap: 10px 10px; */
+    gap: 20px 20px;
     padding: 10px;
 }
 
 .grid_item {
+    /*
     border: 1px solid black;
+    */
     padding: 10px;
     text-align: center;
 }
@@ -67,6 +69,7 @@ h5 {
     float: left;
     width: 200px;
     height: 200px;
+    padding-right: 20px;
 }
 
 #package_delivery {
