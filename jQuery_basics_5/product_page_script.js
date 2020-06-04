@@ -15,19 +15,27 @@ $product_images.each(function() {
 /* TODO: check to see which brand the user clicked on,
          and set the images, prices, and name info accordingly
 */
-var brandName = "Adidas"; // find a way to automatically check for this
+var brand_name = "Champion"; // find a way to automatically check for this
 
 /* "Adidas"
    "Champion"
 */
 
 // see which brandName we have and act accordingly
-switch (brandName) {
+switch (brand_name) {
     case "Champion":
-        $product_images.attr('src', 'heritage_script_champion.jpg');
+        var champion_images = ['heritage_script_champion.jpg'];
+        // for every product image, set the image src to a new one in the list
+        for (var i=0; i<champion_images.length; i++) {
+            $product_images.eq(i).attr('src', champion_images[i]);
+        }
         break;
     case "Adidas":
-        $product_images.attr('src', 'black_adidas.jpg');
+        var adidas_images = ['black_adidas.jpg', 'grey_adidas.jpg', 'white_adidas.jpg'];
+        // for every product image, set the image src to a new one in the list
+        for (var i=0; i<adidas_images.length; i++) {
+            $product_images.eq(i).attr('src', adidas_images[i]);
+        }
         break;
     default:
         break;
