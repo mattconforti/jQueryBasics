@@ -15,3 +15,20 @@ $product_images.each(function() {
 /* TODO: check to see which brand the user clicked on,
          and set the images, prices, and name info accordingly
 */
+var brandName = "Adidas"; // find a way to automatically check for this
+
+/* "Adidas"
+   "Champion"
+*/
+
+// see which brandName we have and act accordingly
+switch (brandName) {
+    case "Champion":
+        $product_images.attr('src', 'heritage_script_champion.jpg');
+        break;
+    case "Adidas":
+        $product_images.attr('src', 'black_adidas.jpg');
+        break;
+    default:
+        break;
+}
