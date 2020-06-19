@@ -2,27 +2,47 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>comp_21 clothing - Home</title>
-        <link rel="stylesheet" href="home_style.css">
+        <link rel="stylesheet" href="styles/home_style.css">
+         <!-- Swiper's CSS Link -->
+        <link rel="stylesheet" href="../package/swiper-bundle.min.css">
+
     </head>
     <body>
         <div id="grid_container">
             <div id="header" class="grid_item">
-                <img class="logo" src="comp_21_logo.jpg" alt="comp_21's logo">
+                <img class="logo" src="images/comp_21_logo.jpg" alt="comp_21's logo">
                 <h1>comp_21 clothing co.</h1>
             </div>
             <div id="menu" class="grid_item">
                 <a href="index.html" class="active">Home</a>
-                <a href="product_page.html">Adidas</a>
-                <a href="product_page.html">Champion</a>
+                <a href="product_pages/product_page.html">Adidas</a>
+                <a href="product_pages/product_page.html">Champion</a>
                 <a href="#">Nike</a>
                 <a href="#">Thrasher</a>
                 <a href="#">Zero</a>
             </div>
             <div id="slider_area" class="grid_item">
-                <img class="image" src="black_longsleeve_adidas.jpg" alt="black longsleeve adidas tee shirt">
+                <img class="image" src="images/black_longsleeve_adidas.jpg" alt="black longsleeve adidas tee shirt">
                 <h2>black longsleeve tee</h2>
-                <p>&lt;- carousel here -&gt;</p>
+                <!-- Swiper here -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">Slide 1</div>
+                      <div class="swiper-slide">Slide 2</div>
+                      <div class="swiper-slide">Slide 3</div>
+                      <div class="swiper-slide">Slide 4</div>
+                      <div class="swiper-slide">Slide 5</div>
+                      <div class="swiper-slide">Slide 6</div>
+                      <div class="swiper-slide">Slide 7</div>
+                      <div class="swiper-slide">Slide 8</div>
+                      <div class="swiper-slide">Slide 9</div>
+                      <div class="swiper-slide">Slide 10</div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                  </div>
             </div>
             <div id="store_special1" class="grid_item">
                 <h4>The best brands, for the lowest price!</h4>
@@ -34,22 +54,36 @@
             </div>
             <div id="store_special2" class="grid_item">
                 <h4 id="freeship">Free Shipping!</h4>
-                <img id="package_delivery" src="package.jpg" alt="cardboard package">
+                <img id="package_delivery" src="images/package.jpg" alt="cardboard package">
                 <h5 id="shipping_discount">on orders of $50 or more!<br>
                     enter code FRESHP50 at checkout.
                 </h5>
             </div>
             <div id="brand_selection_area" class="grid_item">
-                <img class="brand_logo" src="nike_sb_logo.png" alt="nike sb logo">
-                <img class="brand_logo" src="champion_logo.jpg" alt="champion logo">
-                <img class="brand_logo" src="adidas_logo.jpg" alt="adidas logo">
+                <img class="brand_logo" src="images/nike_sb_logo.png" alt="nike sb logo">
+                <img class="brand_logo" src="images/champion_logo.jpg" alt="champion logo">
+                <img class="brand_logo" src="images/adidas_logo.jpg" alt="adidas logo">
             </div>
             <div id="footer" class="grid_item">
                 <h3>Contact Us:</h3>
                 <a href="#header">back to top</a>
             </div>
         </div>
-        <script src="jquery-3.4.1.js"></script>
-        <script src="home_script.js"></script>
+        <script src="scripts/jquery-3.4.1.js"></script>
+        <script src="scripts/home_script.js"></script>
+        <!-- Swiper JS -->
+        <script src="../package/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            },
+            });
+        </script>
     </body>
 </html>
